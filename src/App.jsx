@@ -1,23 +1,26 @@
-import { useState } from 'react';
-import Header from './components/Header';
+import { useState, useEffect } from 'react';
+import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
 import TechStack from './components/TechStack';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import './App.css';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [isDark, setIsDark] = useState(false);
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
+  useEffect(() => {
+    if (isDark) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [isDark]);
 
   return (
-    <div className={`app ${darkMode ? 'dark-mode' : ''}`}>
-      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+    <div className={`min-h-screen transition-colors duration-300 ${isDark ? 'dark' : ''}`}>
+      <Navigation isDark={isDark} setIsDark={setIsDark} />
       <Hero />
       <About />
       <Projects />
