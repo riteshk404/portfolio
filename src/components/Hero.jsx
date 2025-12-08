@@ -1,4 +1,5 @@
-import { Code2, Mail, Terminal } from 'lucide-react';
+import { Code2, Database, Terminal } from 'lucide-react';
+import Profile from './profile.png'
 
 export default function Hero() {
   const scrollToSection = (id) => {
@@ -11,7 +12,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 flex items-center pt-20"
+      className=" min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 flex items-center pt-20"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -58,20 +59,26 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="relative flex justify-center lg:justify-end">
+          <div className="relative flex justify-center">
             <div className="relative">
-              <div className="w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 dark:from-slate-700 dark:to-slate-800 flex items-center justify-center shadow-2xl">
-                <div className="text-8xl sm:text-9xl">👨‍💻</div>
+              <div className="w-48 h-48 sm:w-96 sm:h-96 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 dark:from-slate-700 dark:to-slate-800 flex items-center justify-center shadow-2xl">
+                <div className="  text-8xl sm:text-9xl">
+                  <img src={Profile}
+                    alt="Image of Ritesh" />
+                </div>
               </div>
-              <div className="absolute -top-4 -right-4 w-16 h-16 sm:w-20 sm:h-20 bg-blue-600 rounded-full flex items-center justify-center shadow-lg animate-bounce">
-                <Code2 className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+              <div className="absolute -top-2 -right-2 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center shadow-lg animate-bounce">
+                <Code2 className="w-6 h-6 text-white" />
               </div>
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 sm:w-20 sm:h-20 bg-green-500 rounded-full flex items-center justify-center shadow-lg animate-pulse">
-                <Terminal className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+
+              <div className="absolute -bottom-2 -left-2 w-12 h-12 bg-green-500 rounded-full flex items-center justify-center shadow-lg animate-bounce">
+                <Terminal className="w-6 h-6 text-white" />
               </div>
-              <div className="absolute top-1/2 -right-8 w-16 h-16 sm:w-20 sm:h-20 bg-purple-500 rounded-full flex items-center justify-center shadow-lg">
-                <Mail className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+
+              <div className="absolute top-1/2 -right-8 w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center shadow-lg animate-bounce">
+                <Database className="w-6 h-6 text-white" />
               </div>
+
             </div>
           </div>
         </div>

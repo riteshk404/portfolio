@@ -21,7 +21,7 @@ function App() {
   return (
     <div className={`min-h-screen transition-colors duration-300 ${isDark ? 'dark' : ''}`}>
       <Navigation isDark={isDark} setIsDark={setIsDark} />
-      <Hero />
+        <Hero />
       <About />
       <Projects />
       <TechStack />
