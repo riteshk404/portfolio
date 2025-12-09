@@ -29,8 +29,8 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-16 sm:py-24 bg-white dark:bg-slate-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-16 sm:py-24  ">
+      <div className="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-4">
             About Me
@@ -38,7 +38,8 @@ export default function About() {
           <div className="w-24 h-1 bg-blue-600 dark:bg-blue-400 mx-auto"></div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start mb-12 sm:mb-16">
+        <div className='grid md:grid-cols-2 gap-16 ' >
+        <div className="grid lg:grid-cols gap-8 lg:gap-12 items-start mb-12 sm:mb-16">
           <div className="space-y-6">
             <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
               I'm a versatile developer with a passion for creating innovative solutions across
@@ -53,7 +54,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-3 gap-4 sm:gap-8">
+          <div className="flex gap-8">
             <div className="text-center">
               <div className="text-3xl sm:text-4xl font-bold text-blue-600 dark:text-blue-400">100+</div>
               <div className="text-xs sm:text-sm text-slate-600 dark:text-slate-400">Contributions</div>
@@ -69,13 +70,13 @@ export default function About() {
           </div>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 gap-6">
           {skills.map((skill) => (
             <div
               key={skill.title}
-              className="group p-6 rounded-2xl bg-slate-50 dark:bg-slate-800 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+              className="hover-card p-6 bg-white dark:bg-gray-800/50 rounded-xl shadow-lg backdrop-blur-sm"
             >
-              <div className={`w-14 h-14 rounded-xl ${skill.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+              <div className={`bg-gradient-to-br from-blue-500/10 to-blue-500/20 p-3 rounded-lg w-fit mb-4 ${skill.color}`}>
                 <skill.icon className="w-7 h-7" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
@@ -86,6 +87,7 @@ export default function About() {
               </p>
             </div>
           ))}
+        </div>
         </div>
       </div>
     </section>

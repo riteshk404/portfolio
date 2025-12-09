@@ -27,7 +27,7 @@ export default function TechStack() {
   ];
 
   return (
-    <section id="tech-stack" className="py-16 sm:py-24 bg-white dark:bg-slate-900">
+    <section id="tech-stack" className="py-16 sm:py-24 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-4">
@@ -43,7 +43,7 @@ export default function TechStack() {
           {techCategories.map((category) => (
             <div
               key={category.title}
-              className="p-6 sm:p-8 rounded-2xl bg-slate-50 dark:bg-slate-800 hover:shadow-xl transition-all duration-300"
+              className="hover-card bg-white dark:bg-gray-800/50 rounded-xl shadow-lg p-8 backdrop-blur-sm dark:bg-slate-800 "
             >
               <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-4 sm:mb-6">
                 {category.title}

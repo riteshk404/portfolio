@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className=" min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 flex items-center pt-20"
+      className=" min-h-screen flex items-center pt-20"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -61,9 +61,10 @@ export default function Hero() {
 
           <div className="relative flex justify-center">
             <div className="relative">
-              <div className="w-48 h-48 sm:w-96 sm:h-96 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 dark:from-slate-700 dark:to-slate-800 flex items-center justify-center shadow-2xl">
-                <div className="  text-8xl sm:text-9xl">
+              <div className="w-48 h-48 sm:w-96 sm:h-96 rounded-full bg-gradient-to-br from-blue-600/20 to-purple-600/20 dark:from-slate-700 dark:to-slate-800 flex items-center justify-center shadow-2xl  ">
+                <div className="  text-8xl sm:text-9xl ">
                   <img src={Profile}
+                  className='relative rounded-full w-full h-full object-cover shadow-2xl ring-4 ring-white dark:ring-gray-700'
                     alt="Image of Ritesh" />
                 </div>
               </div>

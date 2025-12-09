@@ -19,7 +19,7 @@ function App() {
   }, [isDark]);
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${isDark ? 'dark' : ''}`}>
+    <div className={`min-h-screen transition-colors duration-300 bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900  ${isDark ? 'dark' : ''}`}>
       <Navigation isDark={isDark} setIsDark={setIsDark} />
         <Hero />
       <About />
