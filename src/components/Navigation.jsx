@@ -37,6 +37,9 @@ export default function Navigation({ isDark, setIsDark }) {
           >
             Ritesh
           </button>
+           <span className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm font-medium">
+              vercel succefully updated
+            </span>
 
           <div className="flex items-center gap-4 sm:gap-8">
 
