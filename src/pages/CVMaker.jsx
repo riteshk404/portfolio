@@ -363,7 +363,7 @@ const handleDownload = () => {
                       <div className="flex flex-wrap gap-2">
                         {formData.skills.split(',').map((skill, i) => skill.trim() && <span key={i} className="bg-blue-500 text-white px-3 py-2 rounded text-sm font-medium">{skill.trim()}</span>)}
                       </div>
-                    </>
+                    </>   
                   )} 
                 </div>
 
