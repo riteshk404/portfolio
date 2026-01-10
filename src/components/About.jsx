@@ -74,7 +74,7 @@ export default function About() {
           {skills.map((skill) => (
             <div
               key={skill.title}
-              className="hover-card p-6 bg-white dark:bg-gray-800/50 rounded-xl shadow-lg backdrop-blur-sm"
+              className="hover-card p-6 bg-white dark:bg-gray-900 rounded-xl shadow-md backdrop-blur-sm"
             >
               <div className={`bg-gradient-to-br from-blue-500/10 to-blue-500/20 p-3 rounded-lg w-fit mb-4 ${skill.color}`}>
                 <skill.icon className="w-7 h-7" />

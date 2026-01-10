@@ -43,7 +43,7 @@ export default function TechStack() {
           {techCategories.map((category) => (
             <div
               key={category.title}
-              className="hover-card bg-white dark:bg-gray-800/50 rounded-xl shadow-lg p-8 backdrop-blur-sm dark:bg-slate-800 "
+              className="hover-card bg-white  rounded-xl shadow-lg p-8 backdrop-blur-sm dark:bg-gray-900 "
             >
               <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-4 sm:mb-6">
                 {category.title}

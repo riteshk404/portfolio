@@ -1,5 +1,6 @@
 import { ExternalLink, Github } from 'lucide-react'
 import Eanchor from './eanchor.png'
+import { Link } from 'react-router-dom';
 
 export default function Projects() {
   const projects = [
@@ -10,12 +11,13 @@ export default function Projects() {
       tags: ['React', 'Node.js', 'PostgreSQL', 'AWS'],
       links: { github: '#', demo: '#' },
     },
+      // <Link to="">CV</Link>
     {
-      title: 'YouTube Platform',
-      description: 'Video sharing platform with advanced search and AI-powered recommendations',
+      title: 'CV Maker',
+      description: 'Create and customize professional CVs with ease using this intuitive web application',
       image: 'https://images.pexels.com/photos/1092671/pexels-photo-1092671.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['React', 'Python', 'MongoDB', 'Redis'],
-      links: { github: '#', demo: '#' },
+      tags: ['React'],
+      links: { github: '#', demo: '/CVMaker' },
     },
     {
       title: 'Football Analytics',
@@ -43,7 +45,7 @@ export default function Projects() {
       description: 'Your source of Great content - Modern blogging platform with rich editor',
       image: 'https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['PHP', 'HTML', 'JavaScript'],
-      links: { github: '#', demo: '#' },
+      links: { github: '#', demo: '/CVMaker.jsx' },
     },
   ];
 
@@ -64,7 +66,7 @@ export default function Projects() {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="group bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+              className="group bg-white dark:bg-gray-900  rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
             >
               <div className="relative h-48 overflow-hidden">
                 <img

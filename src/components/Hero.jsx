@@ -12,11 +12,12 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className=" min-h-screen flex items-center pt-20"
+      className="min-h-screen flex items-center pt-20"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div className="space-y-6 sm:space-y-8">
+          {/* Text Content - Order 2 on mobile, Order 1 on desktop */}
+          <div className="space-y-6 sm:space-y-8 order-2 lg:order-1">
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white">
                 Hi, I'm <span className="text-blue-600 dark:text-blue-400">Ritesh</span>
@@ -31,7 +32,7 @@ export default function Hero() {
             <div className="flex flex-wrap gap-4">
               <button
                 onClick={() => scrollToSection('contact')}
-                className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-md transform"
               >
                 Get in Touch
               </button>
@@ -59,10 +60,11 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="relative flex justify-center">
+          {/* Image - Order 1 on mobile, Order 2 on desktop */}
+          <div className="relative flex justify-center order-1 lg:order-2">
             <div className="relative">
-              <div className="w-48 h-48 sm:w-96 sm:h-96 rounded-full bg-gradient-to-br from-blue-600/20 to-purple-600/20 dark:from-slate-700 dark:to-slate-800 flex items-center justify-center shadow-2xl  ">
-                <div className="  text-8xl sm:text-9xl ">
+              <div className="w-48 h-48 sm:w-96 sm:h-96 rounded-full bg-gradient-to-br from-blue-600/20 to-purple-600/20 dark:from-slate-700 dark:to-slate-800 flex items-center justify-center shadow-2xl">
+                <div className="text-8xl sm:text-9xl">
                   <img src={Profile}
                   className='relative rounded-full w-full h-full object-cover shadow-2xl ring-4 ring-white dark:ring-gray-700'
                     alt="Image of Ritesh" />

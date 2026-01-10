@@ -1,5 +1,6 @@
 import { Moon, Sun } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect} from 'react';
+
 
 export default function Navigation({ isDark, setIsDark }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,7 +38,8 @@ export default function Navigation({ isDark, setIsDark }) {
           >
             Ritesh
           </button>
-           
+         
+
 
           <div className="flex items-center gap-4 sm:gap-8">
 
