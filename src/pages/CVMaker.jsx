@@ -365,7 +365,7 @@ const handleDownload = () => {
                       </div>
                     </>   
                   )} 
-                </div>
+                </div>  
 
                 <div className="p-8 bg-white">
                   {formData.summary && (
