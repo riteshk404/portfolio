@@ -9,7 +9,7 @@ export default function Projects() {
       description: 'A full-featured streaming platform clone with recommendation system and real-time updates',
       image: 'https://images.pexels.com/photos/7991428/pexels-photo-7991428.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['React', 'Node.js', 'PostgreSQL', 'AWS'],
-      links: { github: '#', demo: '#' },
+      links: { github: 'https://github.com/riteshk404/vero', demo: 'https://veronc.vercel.app/' },
     },
       // <Link to="">CV</Link>
     {
