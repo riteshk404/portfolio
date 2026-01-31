@@ -67,7 +67,7 @@ export default function Hero() {
                 <div className="text-8xl sm:text-9xl">
                   <img src={Profile}
                   className='relative rounded-full w-full h-full object-cover shadow-2xl ring-4 ring-white dark:ring-gray-700'
-                    alt="Image of Ritesh" />
+                    alt="Ritesh" />
                 </div>
               </div>
               <div className="absolute -top-2 -right-2 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center shadow-lg animate-bounce">
