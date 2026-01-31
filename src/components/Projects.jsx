@@ -1,6 +1,5 @@
 import { ExternalLink, Github } from 'lucide-react'
 import Eanchor from './eanchor.png'
-import { Link } from 'react-router-dom';
 
 export default function Projects() {
   const projects = [
