@@ -38,7 +38,6 @@ export default function Contact() {
                 })
             });
 
-            const result = await response.json();
 
             if (response.ok) {
                 setIsSubmitted(true);
