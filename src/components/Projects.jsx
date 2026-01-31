@@ -1,13 +1,14 @@
 import { ExternalLink, Github } from 'lucide-react'
 import Eanchor from './eanchor.png'
+import veronc from './veronc.png'
 
 export default function Projects() {
   const projects = [
     {
       title: 'Vero - Netflix Clone',
       description: 'A full-featured streaming platform clone with recommendation system and real-time updates',
-      image: 'https://images.pexels.com/photos/7991428/pexels-photo-7991428.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['React', 'Node.js', 'PostgreSQL', 'AWS'],
+      image: `${veronc}`,
+      tags: ['Next.js', 'TMDB API', 'Tailwind CSS'],
       links: { github: 'https://github.com/riteshk404/vero', demo: 'https://veronc.vercel.app/' },
     },
       // <Link to="">CV</Link>
@@ -67,7 +68,7 @@ export default function Projects() {
               key={project.title}
               className="group bg-white dark:bg-gray-900  rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-46 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -99,6 +100,8 @@ export default function Projects() {
                   <a
                     href={project.links.github}
                     className="flex items-center gap-2 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    target='_blank'
+                    rel="noopener noreferrer"
                   >
                     <Github className="w-5 h-5" />
                     <span className="text-sm font-medium">View Code</span>
