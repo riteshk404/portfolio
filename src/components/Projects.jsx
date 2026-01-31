@@ -107,6 +107,7 @@ export default function Projects() {
                     href={project.links.demo}
                     className="flex items-center gap-2 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                     target='_blank'
+                    rel="noopener noreferrer"
                   >
                     <ExternalLink className="w-5 h-5" />
                     <span className="text-sm font-medium">Live Demo</span>
