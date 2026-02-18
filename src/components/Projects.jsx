@@ -9,7 +9,7 @@ export default function Projects() {
       description: 'A full-featured streaming platform clone with recommendation system and real-time updates',
       image: `${veronc}`,
       tags: ['Next.js', 'TMDB API', 'Tailwind CSS'],
-      links: { github: 'https://github.com/riteshk404/vero', demo: 'https://veronc.vercel.app/' },
+      links: { github: 'https://github.com/riteshk404/vero', demo: 'https://vironc.vercel.app/' },
     },
       // <Link to="">CV</Link>
     {
