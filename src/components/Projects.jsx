@@ -5,7 +5,7 @@ import veronc from './veronc.png'
 export default function Projects() {
   const projects = [
     {
-      title: 'Vero - Netflix Clone',
+      title: 'Viro - Netflix Clone',
       description: 'A full-featured streaming platform clone with recommendation system and real-time updates',
       image: `${veronc}`,
       tags: ['Next.js', 'TMDB API', 'Tailwind CSS'],
