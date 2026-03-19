@@ -1,5 +1,5 @@
 import { ExternalLink, Github } from 'lucide-react'
-import Eanchor from './eanchor.png'
+
 import veronc from './veronc.png'
 
 export default function Projects() {
@@ -33,20 +33,7 @@ export default function Projects() {
       tags: ['Python', 'OpenCV', 'TensorFlow', 'React'],
       links: { github: '#', demo: '#' },
     },
-    {
-      title: 'E-Anchor',
-      description: 'Unleashing your potential - A comprehensive personal development platform',
-      image: Eanchor,
-      tags: ['HTML', 'CSS', 'PHP', 'SQL', 'JavaScript'],
-      links: { github: '#', demo: 'https://eanchor.scienceontheweb.net/' },
-    },
-    {
-      title: 'Writicle',
-      description: 'Your source of Great content - Modern blogging platform with rich editor',
-      image: 'https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['PHP', 'HTML', 'JavaScript'],
-      links: { github: '#', demo: '/CVMaker.jsx' },
-    },
+   
   ];
 
   return (
