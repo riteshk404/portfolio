@@ -1,15 +1,18 @@
-import { ExternalLink, Github } from 'lucide-react'
-import Eanchor from './eanchor.png'
-import veronc from './veronc.png'
+import React from 'react';
+import { motion } from 'framer-motion';
+import { ExternalLink, Github } from 'lucide-react';
+import Eanchor from './eanchor.png';
+import veronc from './veronc.png';
 
 export default function Projects() {
   const projects = [
     {
       title: 'Vero - Netflix Clone',
-      description: 'A full-featured streaming platform clone with recommendation system and real-time updates',
-      image: `${veronc}`,
+      description: 'A flagship streaming platform clone featuring high-fidelity UI and real-time recommendation engines. Optimized for performance and seamless experience.',
+      image: veronc,
       tags: ['Next.js', 'TMDB API', 'Tailwind CSS'],
       links: { github: 'https://github.com/riteshk404/vero', demo: 'https://veronc.vercel.app/' },
+      id: 'vero',
     },
     {
       title: 'CV Maker',
@@ -53,7 +56,7 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <motion.h2
+          <motion.h2 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -71,8 +74,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
           {projects.map((project, index) => {
             const isMain = project.id === 'vero';
-            const isSide = index === 1 || index === 2;
-
+            
             return (
               <motion.div
                 key={project.title}
@@ -80,12 +82,14 @@ export default function Projects() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className={`group flex flex-col bg-white dark:bg-slate-900 rounded-[1.5rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-slate-100 dark:border-slate-800 ${isMain ? 'lg:col-span-2 lg:row-span-2' : ''
-                  }`}
+                className={`group flex flex-col bg-white dark:bg-slate-900 rounded-[1.5rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-slate-100 dark:border-slate-800 ${
+                  isMain ? 'lg:col-span-2 lg:row-span-2' : ''
+                }`}
               >
                 {/* Image Wrap */}
-                <div className={`relative overflow-hidden bg-slate-50 dark:bg-slate-800 ${isMain ? 'h-[250px] md:h-[400px] lg:h-[500px]' : 'h-40'
-                  }`}>
+                <div className={`relative overflow-hidden bg-slate-50 dark:bg-slate-800 ${
+                  isMain ? 'h-[250px] md:h-[400px] lg:h-[500px]' : 'h-40'
+                }`}>
                   <img
                     src={project.image}
                     alt={project.title}
@@ -96,11 +100,12 @@ export default function Projects() {
 
                 {/* Content Area */}
                 <div className={`flex flex-col flex-1 ${isMain ? 'p-10' : 'p-5'}`}>
-                  <h3 className={`font-bold text-slate-900 dark:text-white tracking-tight mb-2 ${isMain ? 'text-3xl' : 'text-lg'
-                    }`}>
+                  <h3 className={`font-bold text-slate-900 dark:text-white tracking-tight mb-2 ${
+                    isMain ? 'text-3xl' : 'text-lg'
+                  }`}>
                     {project.title}
                   </h3>
-
+                  
                   <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4 line-clamp-2">
                     {project.description}
                   </p>
