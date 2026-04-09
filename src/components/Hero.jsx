@@ -66,7 +66,7 @@ export default function Hero() {
               <div className="w-48 h-48 sm:w-96 sm:h-96 rounded-full bg-gradient-to-br from-blue-600/20 to-purple-600/20 dark:from-slate-700 dark:to-slate-800 flex items-center justify-center shadow-2xl">
                 <div className="text-8xl sm:text-9xl">
                   <img src={Profile}
-                  className='relative rounded-full w-full h-full object-cover shadow-2xl ring-4 ring-white dark:ring-gray-700'
+                    className='relative rounded-full w-full h-full object-cover shadow-2xl ring-4 ring-white dark:ring-gray-700'
                     alt="Ritesh" />
                 </div>
               </div>

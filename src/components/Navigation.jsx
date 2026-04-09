@@ -1,5 +1,5 @@
 import { Moon, Sun } from 'lucide-react';
-import { useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
 
 export default function Navigation({ isDark, setIsDark }) {
@@ -23,11 +23,10 @@ export default function Navigation({ isDark, setIsDark }) {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? 'bg-white dark:bg-slate-900 shadow-md'
           : 'bg-transparent'
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 sm:h-20">
@@ -38,7 +37,7 @@ export default function Navigation({ isDark, setIsDark }) {
           >
             Ritesh
           </button>
-         
+
 
 
           <div className="flex items-center gap-4 sm:gap-8">

@@ -25,7 +25,7 @@
 }
 
 body {
-   font-family: "Playfair Display"!important;
+  font-family: "Playfair Display" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -222,9 +222,12 @@ body {
 }
 
 @keyframes floatUpDown {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }
@@ -266,9 +269,12 @@ body {
 }
 
 @keyframes blobAnimation {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1) rotate(0deg);
   }
+
   50% {
     transform: scale(1.1) rotate(180deg);
   }
@@ -307,9 +313,12 @@ body {
 }
 
 @keyframes iconFloat {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-15px);
   }
@@ -320,6 +329,7 @@ body {
     opacity: 0;
     transform: translateX(-50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -331,6 +341,7 @@ body {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
