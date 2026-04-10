@@ -20,7 +20,7 @@ export default function Hero() {
           <div className="space-y-6 sm:space-y-8 order-2 lg:order-1">
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white">
-                Hi, I'm <span className="text-blue-600 dark:text-blue-400">Ritesh</span>
+                Hi, I'm <span className="text-blue-600 dark:text-blue-400">Ritesh Karki</span>
               </h1>
               <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
                 A passionate Full Stack Developer & AI Enthusiast crafting innovative solutions
@@ -67,7 +67,7 @@ export default function Hero() {
                 <div className="text-8xl sm:text-9xl">
                   <img src={Profile}
                     className='relative rounded-full w-full h-full object-cover shadow-2xl ring-4 ring-white dark:ring-gray-700'
-                    alt="Ritesh" />
+                    alt="Ritesh Karki - Full Stack Developer and AI Enthusiast" />
                 </div>
               </div>
               <div className="absolute -top-2 -right-2 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center shadow-lg animate-bounce">
